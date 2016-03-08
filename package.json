@@ -5,7 +5,6 @@
     "express": "latest",
     "ent": "0.0.5",
     "bower": "latest",
-    "request": "latest",
     "body-parser": "latest"
   },
   "version": "0.1.0-6",

@@ -1,26 +1,22 @@
-// uname: trumpsand
-// password: *****************
+// controls twitter for @trumpsand
+
 'use strict';
 
-var express     = require('express');       // call express
+var express     = require('express');
 var bodyParser  = require('body-parser'); // parses body data from http POST
 var Twit        = require('twit');
 var ent         = require('ent');
-var request     = require('request');   // helps make http calls
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// app.get('/', function (req, res) {
-//   res.send('Hi.');
-// });
 
-app.get('/', function (req, res) {
+app.get('/tweet', function (req, res) {
   makeSwag(res);
 });
-// -- End express
 
+app.use(express.static('app'));
 
 
 // Our twitter developer API info is in a file called 'config.js'
@@ -153,7 +149,7 @@ function makeSwag(res) {
     });
   });
 }
-app.use(express.static('/'));
+
 app.listen(3000);
 console.log('twittermash is running');
 
