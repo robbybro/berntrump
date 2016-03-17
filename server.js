@@ -16,6 +16,16 @@ app.get('/tweet', function (req, res) {
   makeSwag(res);
 });
 
+var handleOne = 'realDonaldTrump',
+    handleTwo = 'BernieSanders';
+
+app.post('/handles', function (req, res) {
+  console.log(req.body);
+  handleOne = req.body.handleOne;
+  handleTwo = req.body.handleTwo;
+  res.send();
+});
+
 app.use(express.static('app'));
 
 
@@ -25,9 +35,9 @@ var T = new Twit(require('./config.js'));
 function makeSwag(res) {
   // set up our two data sources (you can paste these in your browser to see the results, in JSON format)
   // URI for all recent #trump tweets with 'and' in them
-  var trump = {q: "from:realDonaldTrump", count: 100, result_type: "recent"}; 
+  var trump = {q: "from:" + handleOne, count: 100, result_type: "recent"}; 
   // URI for all recent @berniebot tweets
-  var bernie = {q: "from:BernieSanders", count: 100, result_type: "recent"};
+  var bernie = {q: "from:" + handleTwo, count: 100, result_type: "recent"};
   var trumps = [];
   var bernies = [];
   var pre = "";
