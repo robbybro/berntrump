@@ -166,11 +166,11 @@ console.log('twittermash is running');
 // Tweet once when we start up the bot
 
 // Tweet every 15 minutes
-// setInterval(function () {
-//   try {
-//     makeSwag();
-//   }
-//   catch (e) {
-//     console.log(e);
-//   }
-// }, 1000 * 60 * 15);
+setInterval(function () {
+  try {
+    makeSwag();
+  }
+  catch (e) {
+    console.log(e);
+  }
+}, 1000 * 60 * 15);
