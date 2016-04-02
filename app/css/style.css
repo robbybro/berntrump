@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.main {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.tweet {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	border: 1px solid lightgrey;
+	padding: 10px;
+}
+
+.tweet i {
+	margin-left: 10px;
+	color: lightblue;
+}
