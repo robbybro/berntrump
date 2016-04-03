@@ -1,6 +1,6 @@
 #Twitter Mash
 
-Twitter Mash takes combines random tweets from the two twitter handles that you specify and spits out the aggregated results. You can even retweet the ones you like! This project is based on a twitter bot I wrote that combined Bernie Sanders and Donald Trump tweets, which in turn was based on a twitter bot that combined Latour quotes with tweets that included #swag](https://github.com/dariusk/latourswag).
+Twitter Mash takes combines random tweets from the two twitter handles that you specify and spits out the aggregated results. You can even retweet the ones you like! This project is based on a twitter bot I wrote that combined Bernie Sanders and Donald Trump tweets, which in turn was based on a [twitter bot that combined Latour quotes with tweets that included #swag](https://github.com/dariusk/latourswag).
 
 ##Instructions
 
